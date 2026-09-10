@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBoxfuente2">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>241</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>fuente 2</string>
+    </property>
+    <widget class="QSlider" name="slidertemp2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>50</y>
+       <width>22</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbltemp2valor">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>150</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>10</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temp [C]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>QMax [L/H]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Qin [L/H]</string>
+     </property>
+    </widget>
+    <widget class="QDial" name="dialQin2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>61</width>
+       <height>81</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblQin2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0 [L/H]</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinQmax2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>90</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxfuente1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>241</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>fuente 1</string>
+    </property>
+    <widget class="QSlider" name="slidertemp1_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>22</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbltemp1valor">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>160</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temp [C]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>QMax [L/H]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Qin [L/H]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblQin1">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>140</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0 [L/H]</string>
+     </property>
+    </widget>
+    <widget class="QDial" name="dialQin1">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>60</y>
+       <width>61</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinQmax1">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>80</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkHabilitarfuente1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>85</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="lblQintotal">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>190</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressNivel">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>230</y>
+      <width>150</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">ui-&gt;progressNivel-&gt;setStyleSheet(
+    &quot;QProgressBar {&quot;
+    &quot;  border: 2px solid #333;&quot;
+    &quot;  background-color: white;&quot;
+    &quot;  text-align: center;&quot;
+    &quot;  font-size: 14px;&quot;
+    &quot;  font-weight: bold;&quot;
+    &quot;}&quot;
+    &quot;QProgressBar::chunk {&quot;
+    &quot;  background-color: #1E90FF;&quot;
+    &quot;}&quot;
+);</string>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slidermin">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>230</y>
+      <width>22</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slidermax">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>230</y>
+      <width>22</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbltemp1_4">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>250</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Min Level [%]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbltemp1_5">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>250</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Max Level [%]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblminvalor">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>290</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblmaxvalor">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>290</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnheater">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>290</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HEATER</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbltemp1_8">
+    <property name="geometry">
+     <rect>
+      <x>277</x>
+      <y>340</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>capacidad [L]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbltemp1_9">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>340</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>cantidad actual [L]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblcantidadactual">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>360</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spincapacidad">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>360</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbltemp1_11">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>390</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Temp [C]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbltemptanque">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>420</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxheater">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>241</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Heater</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PMax [kW]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Qin [L/H]</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblQin1_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>60</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>power[kW]</string>
+     </property>
+    </widget>
+    <widget class="QDial" name="dialheaterpower_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>70</y>
+       <width>61</width>
+       <height>71</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinPmax">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblheaterpower">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblheaterpowercalculado">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>160</y>
+       <width>58</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>380</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>QMax [L/H]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>380</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Qout [L/H]</string>
+    </property>
+   </widget>
+   <widget class="QDial" name="dialQout">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>400</y>
+      <width>61</width>
+      <height>81</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinQmaxout">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>410</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblQout">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>480</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0 [L/H]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblQintotal_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>170</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Qin Total [L/H]</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkHabilitarfuente2">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>40</y>
+      <width>85</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
